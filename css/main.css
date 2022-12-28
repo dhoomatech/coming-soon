@@ -129,7 +129,10 @@ animation: typewriter 4s steps(20) 1s 1 normal both,
 @media (min-width: 768px) {
   .cover-heading {
     font-size: 3.4rem;
-    letter-spacing: 15px; } }
+    letter-spacing: 15px; } 
+
+    
+}
 
 .cover-copy {
   max-width: 500px;
@@ -190,3 +193,41 @@ animation: typewriter 4s steps(20) 1s 1 normal both,
   .mastfoot,
   .cover-container {
     width: 1060px; } }
+
+@media (min-width: 768px){
+
+  .cover-heading {
+      font-size: 2.4rem;
+      letter-spacing: 3px;
+  }
+}
+
+@media (min-width: 370px){
+
+  .cover-heading {
+      font-size: 15px;
+      letter-spacing: 4px;
+  }
+}
+
+@media (min-width: 280px){
+  .logo-img {
+    width: 90%;
+  }
+  .cover-heading {
+
+      font-size: 14px;
+      letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 912px){
+  .logo-img {
+    width: 50%;
+  }
+  .cover-heading {
+
+      font-size: 30px;
+      letter-spacing: 2px;
+  }
+}
