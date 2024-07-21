@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Coming Soon</title>
+    <title>Dhoomatech - Building Solutions</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
@@ -14,38 +14,56 @@
     <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
     <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
     <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PCX8PBNJ');
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
-  <body id="top"><div class="site-wrapper">
+  <body id="top">
+    
+    <!-- Dhoomatech -->
+    <!-- IT Solutions -->
+    <!-- Building Solutions -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCX8PBNJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  <div class="site-wrapper">
   <div class="site-wrapper-inner">
     <div class="cover-container">
       <div class="masthead clearfix">
         <div class="inner">
         
-        <!-- <h3 class="masthead-brand">Dhooma Tech</h3> -->
+        <!-- <h3 class="masthead-brand">DhoomaTech</h3> -->
         <img class="logo-img" src="logo-01.png"/>
           <nav class="nav nav-masthead">
-            <a class="nav-link nav-social" href="#" title="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-            <a class="nav-link nav-social" href="#" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-            <a class="nav-link nav-social" href="#" title="Liked In"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-            <a class="nav-link nav-social" href="#" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a class="nav-link nav-social"  href="https://www.facebook.com/profile.php?id=61550937094280" title="Facebook" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="nav-link nav-social" href="https://x.com/DhoomaTech" title="Twitter" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a class="nav-link nav-social" href="https://www.linkedin.com/company/dhoomatech/" title="Liked In" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a class="nav-link nav-social" href="https://www.instagram.com/dhoomatech/" title="Instagram" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
           </nav>
         </div>
       </div>      
       <div class="inner cover dh-center">
         <h1 class="cover-heading line-1 anim-typewriter">The adventure Begins . .</h1>
-        <p class="lead cover-copy">Looking for a passionate team to work for you? to make a product for you? <br/>  Connect with us to get started          .</p>
-        <p class="lead"><button type="button" class="btn btn-lg btn-default btn-notify" data-toggle="modal" data-target="#subscribeModal">Notify Me</button></p>
+        <p class="lead cover-copy">Looking for a passionate team to work for you? to make a product for you? <br/>  Connect with us to get started.</p>
+        <p>info@dhoomatech.com</p>
+        <p class="lead"><button type="button" class="btn btn-lg btn-default btn-notify" data-toggle="modal" data-target="#subscribeModal">Contact US</button></p>
       </div>
       <div class="mastfoot dh-center">
         <div class="inner">
-          <p>&copy; Dhooma Tech</p>
+          <p>&copy; DhoomaTech</p>
         </div>
       </div>
       <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="subscribeModalLabel">Get Notified on Launch:</h5>
+              <h5 class="modal-title" id="subscribeModalLabel">Get in touch with us:</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -53,19 +71,27 @@
             <div class="modal-body">
               <form>
                 <div class="form-group">
-                  <label for="recipient-name" class="form-control-label">Enter you e-mail to get notified when we launch</label>
-                  <input type="text" class="form-control" id="recipient-name" placeholder="dhoomatech@gmail.com">
+                  <label for="recipient-message" class="form-control-label">Leave us a message.</label>
+                  <input type="text" class="form-control" id="recipient-message" placeholder="Leave us a message." required>
                 </div>
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default">Subscribe</button>
+              <button type="button" class="btn btn-default" onclick="send_handle()">Send</button>
             </div>
           </div>
         </div>
     </div>
   </div>
 </div>
+  <script>
+    function send_handle() {
+      const msg = document.getElementById("recipient-message").value;
+      alert(msg)
+      const win = window.open(`https://wa.me/8891416677?text=${msg}`, '_blank');
+      // win.focus();
+    }
+  </script>
     <script src="scripts/jquery.slim.min.js?ver=1.2.0"></script>
     <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="scripts/main.js?ver=1.2.0"></script>
